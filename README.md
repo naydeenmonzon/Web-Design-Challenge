@@ -1,5 +1,4 @@
-# Web-Design-Challenge  - WEB VISUALIZATION DASHBOARD (LATITUDE)
-
+# Web-Design-Challenge 
 
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
