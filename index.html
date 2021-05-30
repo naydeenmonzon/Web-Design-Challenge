@@ -5,32 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </head>
 <body>
-<section class="home">
-</section>
-
-<section class="visualization part1">
-
-</section>
-<section class="visualization part2">
-
-</section>
-<section class="visualization part3">
-
-</section>
-<section class="visualization part4">
-
-</section>
 
 
-<section class="comparison">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container-fluid">
 
-</section>
+        <div class="row">
+          <a class="navbar-brand col" href="/index.html"><img class="d-inline-block " width="50" height="48" src="/assets/img/globe.png"></a>
+          <div class="col mx-auto" id="navbar-toggler">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span></button>
+          </div>
 
-<section class="data">
 
-</section>
 
+        </div>
+        
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 300px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/subpages/data.html">Data</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/subpages/plots.html">Comparison</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Plots
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="/subpages/temperature.html">Temperature</a></li>
+                      <li><a class="dropdown-item" href="/subpages/humidity.html">Humidity</a></li>
+                      <li><a class="dropdown-item" href="/subpages/cloud.html">Cloudiness</a></li>
+                      <li><a class="dropdown-item" href="/subpages/wind.html">Wind Speed</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+          </div>
+          <form id="seachBar" class="d-flex col">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+  </nav>
+
+
+    <section class="d-flex">
+
+      <div id="home" class="d-flex justify-content-sm-between align-content-sm-center h-100 align-self-center w-100">
+          <div id="home-content"class="col-9 p-md-5">
+                    <div id="home" class="wrapper align-content-md-between justify-content-sm-around h-100">
+                      <div class="container w-100 align-items-stretch">
+                        <h1 class="headline row text-lg-center">WeatherPy</h1>
+                          <div class="intro1 col p-md-3">
+                            <h2 class="wrapper">Whether financial, political, or social – data’s true power lies in its ability to answer questions definitively.
+                              <br>
+                              “What’s the weather like as we approach the equator?”
+                              <br>
+                              Now, we know what you may be thinking: “Duh. It gets hotter…”
+                              <br>
+                              But, if pressed, how would you prove it?
+                            </h2>
+                          </div>
+                          <div  class="intro2 col p-md-3">
+                            <h2 class="wrapper">In this example, 500+ random cities across the world of varying distance from the equator were pulled to use as a dataset. Once assemebled Matplotlib was used to plot various aspects of the weather vs. latitude based on the following factors:
+                                <ul class="topics row">
+                                    <li class= "row-cols-1">Temperature</li>
+                                    <li class= "row-cols-1">Cloudlines</li>
+                                    <li class= "row-cols-1">Wind Speed</li>
+                                    <li class= "row-cols-1">Humidity</li>
+                                </ul>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+
+          <div class="col-3 d-flex flex-wrap" >
+                  <div id="home-links plots" class="container h-100 flex-wrap">
+                      <div id="plot-wrap " class="d-flex flex-wrap h-100 justify-content-sm-evenly align-content-sm-center visible " aria-current="true">
+                        <a class="d-inline-block" href="/subpages/temperature.html" class="col"><img id='chartLinks' class="m-sm-2 d-block w-75 "  src="/assets/visualizations/Lat_vs_Temp.png"></a>
+                        <a class="d-inline-block" href="/subpages/cloud.html" class="col"><img id='chartLinks' class ='m-sm-2 d-block w-75' src="/assets/visualizations/Lat_vs_Cloud.png"></a>
+                        <a class="d-inline-block" href="subpages/humidity.html" class="col"><img id='chartLinks' class =' m-sm-2 d-block w-75' src="/assets/visualizations/Lat_vs_Hum.png"></a>
+                        <a class="d-inline-block" href="subpages/wind.html" class="col"><img id='chartLinks' class ='m-sm-2 d-block w-75' src="/assets/visualizations/Lat_vs_Wind.png"></a>
+                    </div>
+                  </div>
+          </div>
+      </div>
+
+  </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+
+      var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
+      var collapseList = collapseElementList.map(function (collapseEl) {
+      return new bootstrap.Collapse(collapseEl)
+    })
+
+    </script>
 </body>
 </html>
