@@ -7,9 +7,6 @@
 font-family: 'Poiret One', cursive;
 font-family: 'Rajdhani', sans-serif; */
 
-.nav-item{
-    font-weight: bolder;
-}
 
 * {
     margin: 0;
@@ -17,11 +14,12 @@ font-family: 'Rajdhani', sans-serif; */
     font-family: 'Poiret One', cursive;
 }
 
-
-
+.nav-item{
+    font-weight: bolder;
+}
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: url("/assets/img/5059690.jpg");
     background-attachment:fixed;
     background-size: cover;
@@ -30,112 +28,268 @@ body {
 }
 
 
+section{width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+#navbar-toggler{margin-top: 7px;}
+#menu-wrap{padding-left: 2%;}
+.title{margin-left: 20%;
+}
+#searchBar{position: absolute;right: 0;top: 0; margin-top: 20px;}
+
+
+/*-------------------------------------------- home page --------------------------------------------*/
+
+
+
+#chartLinks{ border: 3px solid #06326442;border-style: solid; 
+    transition: ease;
+    transition-duration: .5ms;}
+
+#chartLinks:hover {
+    border-color: rgb(255, 255, 255); border-width: 1px;
+}
+h3#homepage-link{margin-top:10%; text-align: center; background-color: rgba(0, 26, 41, 0.281);}
+
+
+h1.headline {
+    font-size: 10em;
+    margin-top: 2%;
+    font-weight: 400;
+    text-decoration:solid;
+    text-decoration-line: underline overline;
+    padding-top: 50px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+}
+h2.content{font-size: 1.5em; font-weight: 600; margin-top: 3%; word-spacing: 2%;}
+
+#chartLinks{background-color: rgba(0, 26, 41, 0.281); display: block; width: 100%;
+align-self: center; margin-bottom: 5%;}
+
 .plots a img{ background-color: rgba(0, 26, 41, 0.671);}
+
+
+/*-------------------------------------------- Table --------------------------------------------*/
+
+
+header#plot h1{ margin-top: 2%; margin-bottom: 2%;
+    font-size: 6em; font-weight: 900;
+    text-decoration: solid; text-decoration-line: underline;
+}
+
 
 ul.topics li{list-style-position: inside;}
 
-h1.headline{text-align: center; width: 100%;}
+.table{
+    align-self:center;
+    justify-self: center;
+    font-size: smaller;
+    font-weight: bolder;
+    opacity: 90%;
+    width: 90%;
+}
 
-#chartLinks{ border-style: solid;}
+
+/*-------------------------------------------- single Plots--------------------------------------------*/
+
+
+
+.wchart{background-color:rgba(173, 180, 201, 0.568)}
+#windChart{background-color: rgba(222, 220, 233, 0.644); border-style: solid;}
+
+.cchart{background-color:rgba(155, 191, 194, 0.651)}
+#clouChart{background-color: rgba(220, 232, 233, 0.644); border-style: solid;}
+
+.hchart{background-color:rgba(145, 199, 146, 0.568)}
+#humChart{background-color: rgba(223, 233, 220, 0.644); border-style: solid;}
+
+.tchart{background-color:rgba(201, 173, 173, 0.568)}
+#tempChart{background-color: rgba(233, 228, 220, 0.644); border-style: solid;}
+
+#notes{color: rgb(0, 0, 0); font-weight: bolder;}
+#notes p{text-align: justify; text-align-last: auto; margin-top: 5px; font-size: 1.2em;}
+
+
+.spn{white-space:pre;}
+
+#pageicon{background-color: transparent; width: 70px; height: 45px; margin-left: 4px; margin-right: 4px;}
+span.pad{height: 100px; background-color: rgba(91, 212, 212, 0.308); display: block;}
+
+
+#nextpad{position:absolute; top: 48%;-ms-transform: (-48%); transform: (-48%); right:0;
+    text-transform: uppercase; font-family: sans-serif; font-weight: 600; background-color: rgba(21, 99, 145, 0.479);
+    color: azure; writing-mode: vertical-lr; text-orientation: upright; width: 25px; height: 80px; text-align: center;
+    border-top-left-radius: 5px; border-bottom-left-radius: 5px;
+    transition: all .4s ease-in-out; }
+#nextpad:hover { width: 100px; cursor: pointer;}
+ 
+#backpad{position:absolute; top: 48%;-ms-transform: (-48%); transform: (-48%); left:0;
+    text-transform: uppercase; font-family: sans-serif; font-weight: 600; background-color: rgba(21, 99, 145, 0.479);
+    color: azure; writing-mode: vertical-rl; text-orientation: upright; width: 25px; height: 80px; text-align: center;
+    border-top-right-radius: 5px; border-bottom-right-radius: 5px;
+    transition: all .4s ease-in-out; }
+#backpad:hover { width: 100px; cursor: pointer;}
+
+
+
+
+/*-------------------------------------------- comparison Plots--------------------------------------------*/
+
+section#comparison{ width: 90%; margin-left: 5%; padding: 1%;
+    border-color:rgba(150, 150, 150, 0.74); border-style: dashed; border-width: .5em;
+}
+section.south h1{font-size: 4em; color: rgb(255, 171, 110); font-weight: 600;  margin-bottom: 10px;}
+section.north h1{font-size: 4em; color: rgb(198, 242, 255); font-weight: 600;}
+
+.space{width: 100%; display: block; margin-right: 5%; margin-left: 3%; margin-top: 5%;}
+
+
+span.comp{width: 90%; height: 3em; display: block; margin: 2%;
+}
+
+
+header#comparison h1{ margin-bottom: 2%; margin-left: 5%;
+    font-size: 5.5em; font-weight: 900;
+    text-decoration: solid; text-decoration-line: underline;
+}
+p#comparison{font-size: larger; font-weight: 600; word-spacing: 2%; letter-spacing: 2px;}
+
+
+
+.comparison-img{display: block; width: 100%; background-color:whitesmoke; border-style: solid;
+    border-width: 1em; border-radius: 10px;}
+
+img#temp{border-color: salmon;}
+img#humid{border-color: teal;}
+img#cloud{border-color: skyblue;}
+img#wind{border-color: slateblue;}
 
 /*-------------------------------------------- 320px - 480px px --------------------------------------------*/
 
 @media only screen 
-and (min-device-width: 320px) 
+and (min-device-width: 319px) 
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        background: none;
-        background-color: rgb(0, 17, 29);
+    h1.headline{font-size: 4em;
     }
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-      body{
-          display: block;
-        background-image: none;
-      }
-    
-      header{font-size: 1em; display: none;}
-      .intro h1 {font-size: 1em !important;}
-      .intro h2 {font-size: .5em;}
-      .plot{flex-direction: row;}
-      div.list-group{flex-flow: row;}
-      .navbar-nav-scroll{flex-direction: row !important; justify-content: start;}
-      .nav-item{margin-left:3px;}
-      .container-fluid {flex-direction: column !important;}
-      #navbar-toggler{margin-top: 7px;}
-      /* .dropdown-menu.show{ transform:translateX(50)} */
-  }
-
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-
-
-
-
-/*-------------------------------------------- 992 px --------------------------------------------*/
-
-
-
-
-@media only screen and (min-width: 760px) and
-    (max-width: 1199px){
-    h1.headline {
-        text-align: center;
-        font-size: 10em;
-        margin-top: 20px;
-        font-weight:bolder;
-        text-decoration:solid;
-        text-decoration-line: underline overline;
-        padding-top: 10px;
-        font-family: 'Rajdhani', sans-serif;
+    h2.content{font-size: 1em; font-weight: 200;
     }
-    h2{font-size: 1em;}
-    #chartLinks{background-color: rgba(0, 26, 41, 0.281); display: flex; z-index: -5; }
-    .navbar-nav-scroll{flex-direction: row !important; width: 400px;}
-    .nav-item{margin-left:15px;}
-    /* .navbar-brand{position: fixed; top:0; right: 0; margin-right: 80%;} */
-    .container-fluid {flex-direction: row !important; justify-content: flex-start;}
-    #seachBar{ position: absolute; top: 0;right: 0; margin-right: 2%; margin-top: 2%;}
-    #navbar-toggler{margin-top: 7px;}
+    #chartLinks{background-color: rgba(107, 129, 150, 0.411);}
+    header#plot h1{font-size: 3em;}
+    /* #nextpad{position:absolute; top: 60%;-ms-transform: (-60%); transform: (-60%); right:0;}
+    #backpad{position:absolute; top: 60%;-ms-transform: (-60%); transform: (-60%); left:0;} */
+    .form-control{margin-left:5px; font-size:x-small;}
+    .btn{margin: 0; font-size: x-small;}
+    #icon-tog{margin-top: 20px;}
+    .navbar-brand{margin-right: 0; padding-right: 0; margin-left:0;}
+    header#comparison h1{font-size: 3em; margin-left: 5%;}
+    #comparison.row {flex-direction: column;}
+    section#comparison h1{font-size: 3em;}
 }
+
+
+/*-------------------------------------------- 480-760 px --------------------------------------------*/
+
+/* For devices with width between 481px and 768px, like larger phones and portrait tablets */
+@media only screen and (min-width: 481px) 
+and(max-width:760px) {
+    h1.headline{font-size: 4em;
+    }
+    h2.content{font-size: 1em; font-weight: 200;
+    }
+    #chartLinks{background-color: rgba(107, 129, 150, 0.411);}
+    header#plot h1{font-size: 3em;}
+    /* #nextpad{position:absolute; top: 60%;-ms-transform: (-60%); transform: (-60%); right:0;}
+    #backpad{position:absolute; top: 60%;-ms-transform: (-60%); transform: (-60%); left:0;} */
+    .form-control{margin-left:5px; font-size:x-small;}
+    .btn{margin: 0; font-size: x-small;} 
+    #icon-tog{margin-top: 20px;}
+    .navbar-brand{margin-right: 0; padding-right: 0; margin-left:0;}
+} 
+
+
+/*-------------------------------------------- 760-1200 px --------------------------------------------*/
+
+
+
+@media only screen and (min-width: 760px) 
+and(max-width:1200px){
+    h1.headline{font-size: 4em;
+    }
+    h2.content{font-size: 1em; font-weight: 200;
+    }
+    #chartLinks{background-color: rgba(107, 129, 150, 0.411);}
+    header#plot h1{font-size: 3em;}
+    /* #nextpad{position:absolute; top: 60%;-ms-transform: (-60%); transform: (-60%); right:0;}
+    #backpad{position:absolute; top: 60%;-ms-transform: (-60%); transform: (-60%); left:0;} */
+    .form-control{margin-left:5px; font-size:x-small;}
+    .btn{margin: 0; font-size: x-small;}
+    #icon-tog{margin-top: 20px;}
+    .navbar-brand{margin-right: 0; padding-right: 0; margin-left:0;}
+} 
+
+
 
 
 /*-------------------------------------------- 1200px --------------------------------------------*/
-
-
-@media only screen and (min-width: 1200px) {
-    h1.headline {
-        font-size: 10em;
-        margin-top: 2%;
-        padding-left: 10%;
-        font-weight: 400;
-        text-decoration:solid;
-        text-decoration-line: underline overline;
-        padding-top: 50px;
-        font-family: 'Rajdhani', sans-serif;
-    }
-    h2{font-size: 1.5em; font-weight: bold;} 
-    #chartLinks{background-color: rgba(0, 26, 41, 0.281); display: block}
-    /* .seachBar{position: fixed; top: 0; width: 320px;} */
-    /* #navbarScroll {margin-right: 20%;} */
-    
+@media only screen and (min-width: 1280px) {
+    header#comparison h1{font-size: 6em; margin-left: 5%;}
 }
 
 
 
+[class*="col-"] {
+    width: 100%;
+}
 
+@media only screen and (min-width: 481px) {
+    /* Design for tablets */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+   .col-m-3 {width: 25%;}
+   .col-m-4 {width: 33.33%;}
+   .col-m-5 {width: 41.66%;}
+   .col-m-6 {width: 50%;}
+   .col-m-7 {width: 58.33%;}
+   .col-m-8 {width: 66.66%;}
+   .col-m-9 {width: 75%;}
+   .col-m-10 {width: 83.33%;}
+   .col-m-11 {width: 91.66%;}
+   .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 769px) {
+    /* Design for desktop */
+   .col-1 {width: 8.33%;}
+   .col-2 {width: 16.66%;}
+   .col-3 {width: 25%;}
+   .col-4 {width: 33.33%;}
+   .col-5 {width: 41.66%;}
+   .col-6 {width: 50%;}
+   .col-7 {width: 58.33%;}
+   .col-8 {width: 66.66%;}
+   .col-9 {width: 75%;}
+   .col-10 {width: 83.33%;}
+   .col-11 {width: 91.66%;}
+   .col-12 {width: 100%;}
+}
+
+
+@media only screen and (min-width: 1220px) {
+    /* Design for desktop */
+   .col-1 {width: 8.33%;}
+   .col-2 {width: 16.66%;}
+   .col-3 {width: 25%;}
+   .col-4 {width: 33.33%;}
+   .col-5 {width: 41.66%;}
+   .col-6 {width: 50%;}
+   .col-7 {width: 58.33%;}
+   .col-8 {width: 66.66%;}
+   .col-9 {width: 75%;}
+   .col-10 {width: 83.33%;}
+   .col-11 {width: 91.66%;}
+   .col-12 {width: 100%;}
+}
