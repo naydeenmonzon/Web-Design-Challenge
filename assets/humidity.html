@@ -19,7 +19,7 @@
     </form>
     <div class="container-fluid">
         <div id="menu-wrap" class="row align-items-center">
-          <a class="navbar-brand col" href="/index.html"><img class="d-inline-block " width="50" height="48" src="/assets/img/globe.png"></a>
+          <a class="navbar-brand col" href="index.html"><img class="d-inline-block " width="50" height="48" src="/assets/img/globe.png"></a>
           <div class="col" id="navbar-toggler">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"> </span></button>
@@ -28,18 +28,18 @@
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav  navbar-nav-scroll" style="--bs-scroll-height: 300px;">
         <li class="nav-item mx-1">
-          <a class="nav-link active" aria-current="page" href="/index.html">Home</a></li>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
         <li class="nav-item mx-1">
-          <a class="nav-link" href="/subpages/data.html">Data</a></li>
+          <a class="nav-link" href="data.html">Data</a></li>
         <li class="nav-item mx-1">
-          <a class="nav-link" href="/subpages/plots.html">Comparison</a></li>
+          <a class="nav-link" href="plots.html">Comparison</a></li>
         <li class="nav-item mx-1 dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plots</a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="/subpages/temperature.html">Temperature</a></li>
-            <li><a class="dropdown-item" href="/subpages/humidity.html">Humidity</a></li>
-            <li><a class="dropdown-item" href="/subpages/cloud.html">Cloudiness</a></li>
-            <li><a class="dropdown-item" href="/subpages/wind.html">Wind Speed</a></li>
+            <li><a class="dropdown-item" href="temperature.html">Temperature</a></li>
+            <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+            <li><a class="dropdown-item" href="cloud.html">Cloudiness</a></li>
+            <li><a class="dropdown-item" href="wind.html">Wind Speed</a></li>
           </ul>
         </li>
         </ul>
@@ -51,16 +51,16 @@
 
   <section>
       <header class="ms-5" id="plot">
-      <h1>Cloudiness</h1>
+      <h1>Humidity</h1>
     </header>
-    <h2 class="title">Latitude vs. Cloudiness Plot</h2>
+    <h2 class="title">Latitude vs. Humidity Plot</h2>
         <div class="container-sm w-75">
-            <div id="singleChart" class="row cchart align-content-md-center mx-auto">
+            <div id="singleChart" class="row hchart align-content-md-center mx-auto">
                 <div class=" col-7">
-                  <img class="d-block w-100 mx-auto" id=clouChart src="/assets/visualizations/Lat_vs_Cloud.png">
+                  <img class="d-block w-100 mx-auto" id=humChart src="/assets/visualizations/Lat_vs_Hum.png">
                 </div>
                 <div id="notes" class="col-5 mx-auto">
-                  <p>The City Latitude vs Cloudiness scatterplot shows rate of cloudiness doesn't have any correlation on where the city latitude falls into. <br>However, the plot shows most cities either have really low rate or really high rate of cloudiness, as compare to an average clousiness rate.
+                  <p>The City Latitude vs Max Temperature scatterplot shows a trend of decline on temeperature for cities in the northern latitude. <br>Cities within range of 0-20 latitude, which is slightly above the equator, shows the highest max fareinheit temperature.</p>
                 </div>
             </div>
         </div>
@@ -69,14 +69,14 @@
 <!--  -->
 
       <div id="nextpad" class="pad">Next
-        <a href="/subpages/wind.html">
-            <img id=pageicon src="/assets/img/wind.png" alt="">
+        <a href="cloud.html">
+            <img id=pageicon src="/assets/img/cloud.png" alt="">
         </a>
       </div>
 
       <div id="backpad" class="pad">Back
-        <a href="/subpages/humidity.html">
-          <img id=pageicon src="/assets/img/humid.png" alt="">
+        <a href="temperature.html">
+          <img id=pageicon src="/assets/img/sun.png" alt="">
         </a> 
       </div>
 
